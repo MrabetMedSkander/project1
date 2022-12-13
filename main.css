@@ -1,0 +1,177 @@
+body {
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#Titre {
+	position: absolute;
+  left: 40%;
+  top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+p {
+	position: absolute;
+  left: 1%;
+  top: 180px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 3px solid black;
+  color: red;
+}
+
+#Tell {
+position: absolute;
+ left: 62%;
+  top: 60px;
+}
+
+#Tel {
+position: absolute;
+ left: 68%;
+  top: 60px;
+}
+
+#conseil {
+position: absolute;
+ left: 62%;
+  top: 80px;
+}
+
+#conseiller {
+	position: absolute;
+ left: 68%;
+  top: 80px;
+}
+
+#Equi {
+position: absolute;
+ left: 62%;
+  top: 100px;
+}
+
+#Equipe {
+	position: absolute;
+ left: 68%;
+  top: 100px;
+}
+
+#CharQ {
+position: absolute;
+ left: 62%;
+  top: 120px;
+}
+
+#CQ {
+position: absolute;
+ left: 68%;
+  top: 120px;
+}
+
+#Tech{
+position: absolute;
+ left: 82%;
+  top: 80px;
+}
+
+#caracTech{
+	position: absolute;
+ left: 88%;
+  top: 80px;
+}
+
+#Perso{
+	position: absolute;
+ left: 82%;
+  top: 60px;
+}
+
+#caracPerso{
+position: absolute;
+ left: 88%;
+  top: 60px;
+}
+
+#Val{
+	position: absolute;
+ left: 82%;
+  top: 100px;
+}
+
+#Valorisation{
+	position: absolute;
+ left: 88%;
+  top: 100px;
+}
+
+.Rap{
+ position: absolute;
+ left: 82%;
+  top: 120px;
+}
+
+#Rappel{
+ position: absolute;
+ left: 88%;
+  top: 120px;
+}
+
+#Typ{
+	position: absolute;
+ left: 72%;
+  top: 160px;
+  opacity: 95%;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#Type{
+	position: absolute;
+ left: 79%;
+  top: 160px;
+}
+
+#Dat {
+  position: absolute;
+  left: 82%;
+  top: 20px;
+}
+
+#Date {
+  position: absolute;
+  left: 85%;
+  top: 20px;
+}
+
+#commen {
+  position: absolute;
+  left: 30%;
+  top: 375px;
+  opacity: 95%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#commentaire {
+  position: absolute;
+  left: 30%;
+  top: 400px;
+  opacity: 95%;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#btn {
+
+  position: absolute;
+  left: 88%;
+  top: 500px;
+  size: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+
