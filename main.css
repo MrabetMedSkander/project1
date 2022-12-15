@@ -23,13 +23,13 @@ p {
   color: red;
 }
 
-#Tell {
+#tell {
 position: absolute;
  left: 62%;
   top: 60px;
 }
 
-#Tel {
+#tel {
 position: absolute;
  left: 68%;
   top: 60px;
@@ -47,79 +47,79 @@ position: absolute;
   top: 80px;
 }
 
-#Equi {
+#equi {
 position: absolute;
  left: 62%;
   top: 100px;
 }
 
-#Equipe {
+#equipe {
 	position: absolute;
  left: 68%;
   top: 100px;
 }
 
-#CharQ {
+#charq {
 position: absolute;
  left: 62%;
   top: 120px;
 }
 
-#CQ {
+#cq {
 position: absolute;
  left: 68%;
   top: 120px;
 }
 
-#Tech{
+#tech{
 position: absolute;
  left: 82%;
   top: 80px;
 }
 
-#caracTech{
+#caractech{
 	position: absolute;
  left: 88%;
   top: 80px;
 }
 
-#Perso{
+#perso{
 	position: absolute;
  left: 82%;
   top: 60px;
 }
 
-#caracPerso{
+#caracperso{
 position: absolute;
  left: 88%;
   top: 60px;
 }
 
-#Val{
+#val{
 	position: absolute;
  left: 82%;
   top: 100px;
 }
 
-#Valorisation{
+#valorisation{
 	position: absolute;
  left: 88%;
   top: 100px;
 }
 
-.Rap{
+#rap{
  position: absolute;
  left: 82%;
   top: 120px;
 }
 
-#Rappel{
+#rappel{
  position: absolute;
  left: 88%;
   top: 120px;
 }
 
-#Typ{
+#typ{
 	position: absolute;
  left: 72%;
   top: 160px;
@@ -128,19 +128,19 @@ position: absolute;
   font-weight: bold;
 }
 
-#Type{
+#type{
 	position: absolute;
  left: 79%;
   top: 160px;
 }
 
-#Dat {
+#dat {
   position: absolute;
   left: 82%;
   top: 20px;
 }
 
-#Date {
+#date {
   position: absolute;
   left: 85%;
   top: 20px;
@@ -173,5 +173,6 @@ position: absolute;
   font-size: 13px;
   font-weight: bold;
 }
+
 
 

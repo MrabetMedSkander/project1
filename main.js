@@ -2,25 +2,25 @@ function insertFiche(){
           let fiche =[];
          
 
-            Tel = document.getElementById("Tel").value;
+            tel = document.getElementById("tel").value;
             conseiller = document.getElementById("conseiller").value;
-            Equipe = document.getElementById("Equipe").value;
-            CQ = document.getElementById("CQ").value;
-            caracTech = document.getElementById("caracTech").value;
-            caracPerso = document.getElementById("caracPerso").value;
-            Valorisation = document.getElementById("Valorisation").value;
-            Rappel = document.getElementById("Rappel").value;
-            Type = document.getElementById("Type").value;
-            Date = document.getElementById("Date").value;
-            commentaire = document.getElementById("commentaire").value;
+            equipe = document.getElementById("equipe").value;
+            cq = document.getElementById("cq").value;
+            caractech = document.getElementById("caractech").value;
+            caracperso = document.getElementById("caracperso").value;
+            valorisation = document.getElementById("valorisation").value;
+            rappel = document.getElementById("rappel").value;
+            type = document.getElementById("type").value;
+            date = document.getElementById("date").value;
+            commentaire = document.getElementById("comment").value;
 
-            let string = (Tel +' '+conseiller+' '+Equipe+' '+CQ+' '+caracTech+' '+caracPerso+' '+Valorisation+' '+Rappel+' '+Type+' '+Date+' '+commentaire)
+            let string = (tel +' '+conseiller+' '+equipe+' '+cq+' '+caractech+' '+caracperso+' '+valorisation+' '+rappel+' '+type+' '+date+' '+commentaire)
 
 
        fiche = string.split(" ")
 
 
-consttant = ['Num Tél', 'Conseiller', 'Equipe', 'CQ', 'caracTech', 'caracPerso', 'Valorisation', 'Rappel', 'Type', 'Date', 'Commentaire']
+consttant = ['num Tél', 'conseiller', 'cquipe', 'cq', 'caractech', 'caracperso', 'valorisation', 'rappel', 'type', 'date', 'commentaire']
 
 let item={};
   
@@ -32,10 +32,23 @@ for(var i=0; i<fiche.length; i++){
 
 };
 
-console.log(item);
+
+console.log(item)
+
+allFiche = []
 
 
+allFiche.push(item, window.localStorage.getItem("allFiche"))
+
+
+
+window.localStorage.setItem("allFiche", JSON.stringify(allFiche));
 }
+
+allFiche = window.localStorage.getItem("allFiche");
+console.log(JSON.parse(allFiche));
+
+
 let btn = document.getElementById("btn");
 btn.addEventListener('click', event => {
       insertFiche();
@@ -43,5 +56,9 @@ btn.addEventListener('click', event => {
  });
 
 
-
-
+$("#divModif").hide();
+$("#Modif").click(function(){
+  $(".form").hide();
+  $("#divModif").show();
+}
+) 
