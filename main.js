@@ -10,17 +10,16 @@ function insertFiche(){
             caracperso = document.getElementById("caracperso").value;
             valorisation = document.getElementById("valorisation").value;
             rappel = document.getElementById("rappel").value;
-            type = document.getElementById("type").value;
             date = document.getElementById("date").value;
             commentaire = document.getElementById("comment").value;
 
-            let string = (tel +' '+conseiller+' '+equipe+' '+cq+' '+caractech+' '+caracperso+' '+valorisation+' '+rappel+' '+type+' '+date+' '+commentaire)
+            let string = (tel +' '+conseiller+' '+equipe+' '+cq+' '+caractech+' '+caracperso+' '+valorisation+' '+rappel+' '+date+' '+commentaire)
 
 
        fiche = string.split(" ")
 
 
-consttant = ['num Tél', 'conseiller', 'cquipe', 'cq', 'caractech', 'caracperso', 'valorisation', 'rappel', 'type', 'date', 'commentaire']
+consttant = ['num Tél', 'conseiller', 'cquipe', 'cq', 'caractech', 'caracperso', 'valorisation', 'rappel', 'date', 'commentaire']
 
 let item={};
   

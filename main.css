@@ -119,20 +119,6 @@ position: absolute;
   top: 120px;
 }
 
-#typ{
-	position: absolute;
- left: 72%;
-  top: 160px;
-  opacity: 95%;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-#type{
-	position: absolute;
- left: 79%;
-  top: 160px;
-}
 
 #dat {
   position: absolute;
