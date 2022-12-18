@@ -56,9 +56,74 @@ btn.addEventListener('click', event => {
  });
 
 
-$("#divModif").hide();
-$("#Modif").click(function(){
+
+
+$("#divetat").hide();
+$("#etat").click(function(){
   $(".form").hide();
-  $("#divModif").show();
+  $("#divetat").show();
 }
 ) 
+
+
+
+
+
+$("#con").click(function(){
+  $(".form").show();
+  $("#divetat").hide();
+}
+) 
+
+
+
+function each(coll, f) {
+  if (Array.isArray(coll)) {
+    for (var i = 0; i < coll.length; i++) {
+      f(coll[i], i);
+    }
+  } else {
+    for (var key in coll) {
+      f(coll[key], key);
+    }
+  }
+}
+
+function filter(array, predicate) {
+  var acc = [];
+  each(array, function(element, i) {
+    if (predicate(element, i)) {
+      acc.push(element);
+    }
+  });
+  return acc;
+}
+
+
+allFiche = window.localStorage.getItem("allFiche");
+
+function etatfiche(allfiche) {
+
+
+keys = document.getElementById('tel2').value;
+
+  return filter (allfiche, (object, key) => object['num Tél'] == keys)
+}
+
+let etatfinal = etatfiche(allFiche);
+
+for(let key in etatfinal){
+document.getElementById('tb').innerHTML += etatfinal[key] + '<tr>';
+}
+
+let btn2 = document.getElementById("btn2");
+btn2.addEventListener('click', event => {
+      etatfiche(allFiche);
+
+    });
+
+
+   
+
+
+

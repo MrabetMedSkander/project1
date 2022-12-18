@@ -155,7 +155,7 @@ position: absolute;
   font-weight: bold;
 }
 
-#commentaire {
+#comment{
   position: absolute;
   left: 30%;
   top: 400px;
@@ -172,6 +172,69 @@ position: absolute;
   size: 20px;
   font-size: 13px;
   font-weight: bold;
+}
+
+
+
+
+
+#tell2 {
+position: absolute;
+ left: 62%;
+  top: 60px;
+}
+
+#tel2 {
+position: absolute;
+ left: 68%;
+  top: 60px;
+}
+
+#btn2 {
+position: absolute;
+ left: 85%;
+  top: 60px;
+}
+
+
+
+
+
+
+#tell1 {
+position: absolute;
+ left: 62%;
+  top: 60px;
+}
+
+#tel1 {
+position: absolute;
+ left: 68%;
+  top: 60px;
+}
+
+#conseil1 {
+position: absolute;
+ left: 62%;
+  top: 80px;
+}
+
+#conseiller1 {
+  position: absolute;
+ left: 68%;
+  top: 80px;
+}
+
+#equi1 {
+position: absolute;
+ left: 62%;
+  top: 100px;
+}
+
+#equipe1 {
+  position: absolute;
+ left: 68%;
+  top: 100px;
 }
 
 

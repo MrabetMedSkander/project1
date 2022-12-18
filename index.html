@@ -12,17 +12,18 @@
 
   
 <header>
-<h id = "Titre">Qualification</h>
-</header>
+<h id = "Titre" >Qualification</h>
+</header> 
 
 <p>label pour le nom de l'agent CQ</p>
 
+<button id="con">Confirmation</button>
+
 <! Statistique est un lien Hypertext pour nous mener a une nouvelle page ou on peut chercher un etat d'une fiche existante ou faire une recherche avec un numero de conseiller et avoir ses statistique sur les critéres percent de ko dans chaque critère>
 
-<button  id="Statis">Statistique</button>
+<button  id="etat">etat fiche</button>
 
-<! modifier est un lien Hypertext pour nous mener a une nouvelle page ou on peut modifier une fiche existante>
-<button id="Modif">Modifier</button>
+
 
 
 <! partie insertion>
@@ -69,70 +70,31 @@
       <option value="HC">Hors Cible</option>
       </select>
 <label id="dat" for="Date">Date:</label>
-      <input type="date" id="date" name="trip-start"value="aaaa-mm-jj" min="2018-01-01" max="2050-12-31" >
+      <input type="date" id="date" value="aaaa-mm-jj" min="2018-01-01" max="2050-12-31" >
 
 <label id="commen" for="Votre commentaire">Votre commentaire: </label>
-      <textarea name="comment" id="commentaire" rows="10" cols="80"></textarea >
+      <textarea name="comment" id="comment" rows="10" cols="80"></textarea >
 
 <button id="btn">Confirme</button>
 
   </div>
 
-<! partie recherche>
-<div id = "divModif">
-
-      <h id="back">Qualification</h>
-
-<label id="Tell1" for="Numero de Tel">Num Fiche: </label>
-      <input type="number" min="1000000" max="999999999999999999"  id="Tel1" class="NumTel">
-<label id="conseil1" for="Conseiller">Conseiller: </label>
-      <input type="text" id="conseiller1" class="consei">
-<label id="Equi1" for="Equipe">Equipe: </label>
-      <input type="text" id="Equipe1" class="Equipes1">
-<label id="CharQ1" for="CQ">Chargé Qua: </label>
-      <input type="text" id="CQ1" class="ChargeQ1">
-<label id="Tech1" for="Critère-select">C Technique:</label>
-      <select name="Critère" id="caracTech1">
-      <option value="">--Critère--</option>
-      <option value="OK">OK</option>
-      <option value="KO">KO Critère</option>
-      </select>
-<label id="Perso1" for="Critère-select">C Personnel:</label>
-      <select name="Critère" id="caracPerso1">
-      <option value="">--Critère--</option>
-      <option value="OK">OK</option>
-      <option value="KO">KO Critère</option>
-      </select>
-<label id="Val1" for="Valorisation">Valorisation:</label>
-      <select name="Valorisation" id="Valorisation1">
-      <option value="">--Critère--</option>
-      <option value="OK">OK</option>
-      <option value="KO">KO Critère</option>
-      </select>
-<label class = "rap1" for="Rappel">Rappel Tél:</label>
-      <select name="Rappel" id="Rappel1">
-      <option value="">--Critère--</option>
-      <option value="OK">OK</option>
-      <option value="KO">KO Critère</option>
-      </select>
-<label id="Typ1" for="Conformité">Conformité:</label>
-      <select name="Conformité" id="Type1">
-      <option value="">--fiche--</option>
-      <option value="Conforme ">Conforme </option>
-      <option value="KO">KO Critère</option>
-      <option value="HC">Hors Cible</option>
-      </select>
-<label id="Dat1" for="Date">Date:</label>
-      <input type="date" id="Date1" name="trip-start"value="aaaa-mm-jj" min="2018-01-01" max="2050-12-31">
-
-<label id="commen1" for="Votre commentaire">Votre commentaire: </label>
-      <textarea name="comment" id="comment" rows="10" cols="80"></textarea>
-
-<button id="btn1">Confirme</button>
-  </div>
 
 
-<div id = "divStatis"></div>
+<div id = "divetat">
+
+<label id="tell2" for="Numero de Tel">Num Fiche: </label>
+      <input type="number" min="1000000" max="999999999999999999"  id="tel2" class="NumTel" >
+
+
+    <tr id='tb'> 
+  </tr>
+
+<button id="btn2">Confirme</button>
+
+
+</div>
+
 
 
 
