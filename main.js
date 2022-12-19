@@ -1,5 +1,11 @@
+
+var allFiche = window.localStorage.getItem("allFiche");
+var ami =JSON.parse(allFiche);
+console.log(typeof ami);
+console.log(ami);
+
 function insertFiche(){
-          let fiche =[];
+          var fiche =[];
          
 
             tel = document.getElementById("tel").value;
@@ -13,7 +19,7 @@ function insertFiche(){
             date = document.getElementById("date").value;
             commentaire = document.getElementById("comment").value;
 
-            let string = (tel +' '+conseiller+' '+equipe+' '+cq+' '+caractech+' '+caracperso+' '+valorisation+' '+rappel+' '+date+' '+commentaire)
+            var string = (tel +' '+conseiller+' '+equipe+' '+cq+' '+caractech+' '+caracperso+' '+valorisation+' '+rappel+' '+date+' '+commentaire)
 
 
        fiche = string.split(" ")
@@ -21,40 +27,25 @@ function insertFiche(){
 
 consttant = ['num Tél', 'conseiller', 'cquipe', 'cq', 'caractech', 'caracperso', 'valorisation', 'rappel', 'date', 'commentaire']
 
-let item={};
+var item={};
   
 for(var i=0; i<fiche.length; i++){
 
   item[consttant[i]] = fiche[i];
-
-
-
 };
 
+var allFiche = [];
 
-console.log(item)
-
-allFiche = []
-
-
-allFiche.push(item, window.localStorage.getItem("allFiche"))
-
-
+allFiche.push(item, window.localStorage.getItem("allFiche"));
 
 window.localStorage.setItem("allFiche", JSON.stringify(allFiche));
 }
 
-allFiche = window.localStorage.getItem("allFiche");
-console.log(JSON.parse(allFiche));
-
-
-let btn = document.getElementById("btn");
+var btn = document.getElementById("btn");
 btn.addEventListener('click', event => {
       insertFiche();
 
  });
-
-
 
 
 $("#divetat").hide();
@@ -64,16 +55,11 @@ $("#etat").click(function(){
 }
 ) 
 
-
-
-
-
 $("#con").click(function(){
   $(".form").show();
   $("#divetat").hide();
 }
 ) 
-
 
 
 function each(coll, f) {
@@ -99,30 +85,18 @@ function filter(array, predicate) {
 }
 
 
-allFiche = window.localStorage.getItem("allFiche");
-
-function etatfiche(allfiche) {
-
-
-keys = document.getElementById('tel2').value;
-
-  return filter (allfiche, (object, key) => object['num Tél'] == keys)
+function etatfiche(array) {
+var keys = document.getElementById('tel2').value;
+  return filter (array, (object, key) => object['num Tél'] == keys)
 }
 
-let etatfinal = etatfiche(allFiche);
+var etatfinal = etatfiche(ami);
 
-for(let key in etatfinal){
-document.getElementById('tb').innerHTML += etatfinal[key] + '<tr>';
-}
-
-let btn2 = document.getElementById("btn2");
+var btn2 = document.getElementById("btn2");
 btn2.addEventListener('click', event => {
-      etatfiche(allFiche);
+      console.log(etatfinal);
 
     });
-
-
-   
 
 
 
